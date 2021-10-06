@@ -17,7 +17,7 @@ fi
 if [ ! -e "/etc/debian_version" ]
 then
   echo ""
-  echo "This script is only tested in Debian 8,9 and x64 cpu Arch. for now."
+  echo "This script is only tested in Debian/Ubuntu 8,9,10 and x64 cpu Arch. for now."
   exit 0
 fi
 DIRDIR=$(pwd)
