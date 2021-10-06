@@ -1,11 +1,12 @@
-# YSFReflector-debian-installer
+# YSFReflector-debian-installer Forked from N5AMD
+# With thanks to N5AMD for this script
 This is a simple script to install YSFReflector and the YSFReflector Dashboard. This script essentially runs through the official steps found at: https://register.ysfreflector.de/installation and https://github.com/dg9vh/YSFReflector-Dashboard for your convenience. All you need to provide before hand is have a Debian 9.x server ready and updated and a FQDN for the web dashboard. 
 
 
 
-### To install on Debian 9.x:
+### To install on Debian 9.x, 10.x / Ubuntu 21.04:
 ```sh
-git clone https://github.com/n5amd/YSFReflector-debian-installer
+git clone https://github.com/ShaYmez/YSFReflector-debian-installer
 cd YSFReflector-debian-installer
 ./YSFReflector-debian-installer
 ```
