@@ -97,9 +97,9 @@ useradd mmdvm -g mmdvm -s /sbin/nologin
 mkdir -p /var/log/YSFReflector
 chown mmdvm: /var/log/YSFReflector
 echo "Copying ysfrelfector to systemd...... "
-cp $DIRDIR/templates/ysfreflector.service /etc/systemd/system
+cp $DIRDIR/templates/ysf.service /etc/systemd/system
 systemctl daemon-reload
-systemctl enable ysfreflector
+systemctl enable ysf
 echo "------------------------------------------------------------------------------"
 echo "Installing the YSF Dashboard and configuring apache... "
 echo "------------------------------------------------------------------------------"
@@ -118,6 +118,7 @@ a2ensite $YSFDOMAIN
 a2enmod php
 systemctl start ysfreflector
 systemctl restart apache2
+
 echo ""
 echo ""
 echo "******************************************************************************"
