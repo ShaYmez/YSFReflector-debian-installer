@@ -116,7 +116,7 @@ sed -i "s/ysf-xlxd/ysf/g" /etc/apache2/sites-available/$YSFDOMAIN.conf
 chown -R www-data: $YSFWEBDIR
 a2ensite $YSFDOMAIN
 a2enmod php7.4
-systemctl start ysfreflector
+systemctl start ysf
 systemctl restart apache2
 
 echo ""
