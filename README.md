@@ -13,7 +13,7 @@ cd YSFReflector-debian-installer
 
 ### To interact with ysfreflector after installation:
 ```sh
-systemctl start|stop|status|restart ysfreflector
+systemctl start|stop|status|restart ysf
 ```
  - Installs to /ysfreflector
  - Logs are in /var/log/YSFReflector
